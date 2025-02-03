@@ -1,8 +1,8 @@
 // dispaly Money In indian Formate
 export const dispalyMoney = function(num) {
-  const numFormate = new Intl.NumberFormat("en-IN", {
+  const numFormate = new Intl.NumberFormat("en-PK", {
     style: "currency",
-    currency: "INR",
+    currency: "PKR",
   });
 
   const arr = numFormate.format(num).split(".", 1);
